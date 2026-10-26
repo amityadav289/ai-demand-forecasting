@@ -1,0 +1,26 @@
+# Secrets and local config
+.env
+.env.local
+*.env.local
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local data (database, trained models, uploaded datasets)
+backend/app.db
+backend/ml_models/*
+backend/uploads/*
+!backend/ml_models/.gitkeep
+!backend/uploads/.gitkeep
+
+# Node
+node_modules/
+frontend/dist/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
